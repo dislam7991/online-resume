@@ -97,6 +97,12 @@ img {
     object-fit: cover;
 }
 
+.tagline {
+    color: var(--color-muted);
+    font-size: 1rem;
+    margin: 0 0 0.75rem;
+}
+
 .nav-links {
     display: flex;
     gap: 1.5rem;
