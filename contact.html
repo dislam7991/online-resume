@@ -3,23 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact information for Daniel Islam.">
-    <title>Contact Me | Daniel Islam</title>
+    <title>Contact | Daniel Islam</title>
+    <meta name="description" content="Get in touch with Daniel Islam by email, LinkedIn, or GitHub.">
+    <link rel="canonical" href="https://dislam7991.github.io/online-resume/contact.html">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#2563eb">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact | Daniel Islam">
+    <meta property="og:description" content="Get in touch with Daniel Islam by email, LinkedIn, or GitHub.">
+    <meta property="og:url" content="https://dislam7991.github.io/online-resume/contact.html">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("theme");
+                if (t === "dark" || t === "light") { document.documentElement.setAttribute("data-theme", t); }
+            } catch (e) { /* ignore */ }
+        })();
+    </script>
 </head>
 <body>
-    <main>
-        <h1>Contact Information</h1>
-        <hr/>
-        <p>I keep my phone number off this public page, but I am happy to connect by email or on
-            LinkedIn for any collaboration, advice, or job opportunities. :)</p>
-        <ul>
-            <li>Location: Atlanta, GA (U.S. Citizen)</li>
-            <li>Email: <a href="mailto:dislam7991@gmail.com">dislam7991@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/daniel-islam1" target="_blank" rel="noopener">linkedin.com/in/daniel-islam1</a></li>
-            <li>GitHub: <a href="https://github.com/dislam7991" target="_blank" rel="noopener">github.com/dislam7991</a></li>
-        </ul>
-        <p><a href="./index.html">Home</a></p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="./index.html">Daniel Islam</a>
+            <nav class="topnav" aria-label="Primary">
+                <a href="./index.html">Resume</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./hobbies.html">Hobbies</a>
+                <a href="./contact.html" class="is-active">Contact</a>
+                <button type="button" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <section class="hero reveal" aria-labelledby="page-title">
+            <div class="hero__body">
+                <h1 id="page-title" class="hero__name">Contact</h1>
+                <p class="hero__tagline">I keep my phone number off this public page, but I am happy to connect for
+                    collaboration, advice, or job opportunities.</p>
+            </div>
+        </section>
+
+        <section class="section reveal" aria-label="Contact details">
+            <div class="grid">
+                <a class="subcard" href="mailto:dislam7991@gmail.com">
+                    <h3>Email</h3>
+                    <p class="subcard__meta">dislam7991@gmail.com</p>
+                    <p>The fastest way to reach me.</p>
+                </a>
+                <a class="subcard" href="https://www.linkedin.com/in/daniel-islam1" target="_blank" rel="noopener">
+                    <h3>LinkedIn</h3>
+                    <p class="subcard__meta">linkedin.com/in/daniel-islam1</p>
+                    <p>Professional background and network.</p>
+                </a>
+                <a class="subcard" href="https://github.com/dislam7991" target="_blank" rel="noopener">
+                    <h3>GitHub</h3>
+                    <p class="subcard__meta">github.com/dislam7991</p>
+                    <p>Code and open-source work.</p>
+                </a>
+                <div class="subcard">
+                    <h3>Location</h3>
+                    <p class="subcard__meta">Atlanta, GA</p>
+                    <p>U.S. Citizen. Open to remote and Atlanta-area roles.</p>
+                </div>
+            </div>
+            <p style="margin-top:1.25rem"><a href="./index.html">&larr; Back to resume</a></p>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year">2026</span> Daniel Islam</p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
 </body>
 </html>

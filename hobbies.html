@@ -3,34 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hobbies of Daniel Islam: bodybuilding and powerlifting, cooking, photography, and videography.">
-    <title>My Hobbies | Daniel Islam</title>
+    <title>Hobbies | Daniel Islam</title>
+    <meta name="description" content="Beyond code: bodybuilding and powerlifting, cooking, photography, and videography.">
+    <link rel="canonical" href="https://dislam7991.github.io/online-resume/hobbies.html">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#2563eb">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hobbies | Daniel Islam">
+    <meta property="og:description" content="Beyond code: bodybuilding and powerlifting, cooking, photography, and videography.">
+    <meta property="og:url" content="https://dislam7991.github.io/online-resume/hobbies.html">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("theme");
+                if (t === "dark" || t === "light") { document.documentElement.setAttribute("data-theme", t); }
+            } catch (e) { /* ignore */ }
+        })();
+    </script>
 </head>
 <body>
-    <main>
-        <h1>My Hobbies</h1>
-        <hr/>
-        <p>When I'm not immersed in tech and coding, you can often find me breaking a sweat
-            at the gym, fine-tuning my strength and conditioning as a dedicated bodybuilder and
-            powerlifter.</p>
-        <img src="./assets/images/Bench Thumbnail.jpg" height="200" alt="Sitting on a bench press in the gym"/>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <p>Cooking is another passion of mine &ndash; from crafting high-protein meal
-            bowls to experimenting with creative flavors, I'm always in the kitchen exploring ways to nourish both body and soul.</p>
-        <img src="./assets/images/Pasta-1024x683.jpg" height="200" alt="A pan of pasta being cooked"/>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="./index.html">Daniel Islam</a>
+            <nav class="topnav" aria-label="Primary">
+                <a href="./index.html">Resume</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./hobbies.html" class="is-active">Hobbies</a>
+                <a href="./contact.html">Contact</a>
+                <button type="button" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
 
-        <p>I'm also an avid photographer, with a love for capturing moments through portrait
-            photography and sharing my work with a respectable following I've built on Instagram.
-            My passion extends to editing, camera work, and videography for YouTube, where I enjoy
-            bringing stories to life.</p>
-        <img src="./assets/images/IMG_2141.jpg" height="200" alt="Taking a selfie with a camera in the gym"/>
+    <main id="main" class="container">
+        <section class="hero reveal" aria-labelledby="page-title">
+            <div class="hero__body">
+                <h1 id="page-title" class="hero__name">My Hobbies</h1>
+                <p class="hero__tagline">The creative and disciplined life outside of tech.</p>
+            </div>
+        </section>
 
-        <p>Balancing my lifelong curiosity with competitive online gaming
-            sessions and a good book, I find fulfillment in both the creative and disciplined
-            aspects of life. Life's a grind &ndash; but it's one I'm committed to mastering.</p>
+        <section class="section reveal" aria-label="Hobbies">
+            <div class="card">
+                <p>When I'm not immersed in tech and coding, you can often find me breaking a sweat at the gym,
+                    fine-tuning my strength and conditioning as a dedicated bodybuilder and powerlifter.</p>
+                <img class="figure" src="./assets/images/Bench Thumbnail.jpg" height="220" alt="Sitting on a bench press in the gym">
 
-        <p><a href="./index.html">Home</a></p>
+                <p>Cooking is another passion of mine &ndash; from crafting high-protein meal bowls to experimenting
+                    with creative flavors, I'm always in the kitchen exploring ways to nourish both body and soul.</p>
+                <img class="figure" src="./assets/images/Pasta-1024x683.jpg" height="220" alt="A pan of pasta being cooked">
+
+                <p>I'm also an avid photographer, with a love for capturing moments through portrait photography and
+                    sharing my work with a respectable following I've built on Instagram. My passion extends to editing,
+                    camera work, and videography for YouTube, where I enjoy bringing stories to life.</p>
+                <img class="figure" src="./assets/images/IMG_2141.jpg" height="220" alt="Taking a selfie with a camera in the gym">
+
+                <p>Balancing my lifelong curiosity with competitive online gaming sessions and a good book, I find
+                    fulfillment in both the creative and disciplined aspects of life. Life's a grind &ndash; but it's
+                    one I'm committed to mastering.</p>
+            </div>
+            <p style="margin-top:1.25rem"><a href="./index.html">&larr; Back to resume</a></p>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year">2026</span> Daniel Islam</p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
 </body>
 </html>

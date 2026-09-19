@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dislam7991.github.io/online-resume/sitemap.xml
