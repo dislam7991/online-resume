@@ -3,118 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Online resume of Daniel Islam, DevOps engineer and IT professional skilled in API development, AWS cloud infrastructure, Docker, Python, and PostgreSQL.">
-    <title>Daniel Islam | Resume</title>
+    <title>Daniel Islam | Software Engineer &amp; MLOps</title>
+    <meta name="description" content="Daniel Islam — software engineer with production experience in Python, cloud infrastructure, frontend web development, and applied machine learning and MLOps. Based in Atlanta, GA.">
+    <meta name="author" content="Daniel Islam">
+    <link rel="canonical" href="https://dislam7991.github.io/online-resume/">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daniel Islam | Software Engineer &amp; MLOps">
+    <meta property="og:description" content="Software engineer specializing in Python, cloud infrastructure, and applied machine learning / MLOps.">
+    <meta property="og:url" content="https://dislam7991.github.io/online-resume/">
+    <meta property="og:image" content="https://dislam7991.github.io/online-resume/assets/images/headshot1.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Daniel Islam | Software Engineer &amp; MLOps">
+    <meta name="twitter:description" content="Software engineer specializing in Python, cloud infrastructure, and applied machine learning / MLOps.">
+    <meta name="twitter:image" content="https://dislam7991.github.io/online-resume/assets/images/headshot1.jpg">
+
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Set theme before paint to avoid a flash of the wrong theme. -->
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("theme");
+                if (t === "dark" || t === "light") {
+                    document.documentElement.setAttribute("data-theme", t);
+                }
+            } catch (e) { /* ignore */ }
+        })();
+    </script>
+
+    <!-- Structured data: Person -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Daniel Islam",
+        "jobTitle": "Software Engineer",
+        "email": "mailto:dislam7991@gmail.com",
+        "url": "https://dislam7991.github.io/online-resume/",
+        "address": { "@type": "PostalAddress", "addressLocality": "Atlanta", "addressRegion": "GA", "addressCountry": "US" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Kansas" },
+        "knowsAbout": ["Python", "Machine Learning", "MLOps", "Cloud Infrastructure", "AWS", "FastAPI", "React", "Next.js", "TypeScript", "PostgreSQL"],
+        "sameAs": [
+            "https://www.linkedin.com/in/daniel-islam1",
+            "https://github.com/dislam7991"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <main>
-        <header>
-            <img src="./assets/images/headshot1.jpg" alt="Portrait of Daniel Islam" height="150" width="150" class="headshot"/>
-            <h1>Daniel Islam</h1>
-        </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <h2>Summary</h2>
-        <p>Experienced IT professional with a proven track record in API development, cloud infrastructure management in AWS,
-            and DevOps practices. Skilled in Docker containerization, backend development using Python, and PostgreSQL database management.
-            Adept at network configuration, VPN setup, and ensuring security and compliance. Strong troubleshooter and performance
-            optimizer with proficiency in automation scripting. Excels in project management, client communication, and delivering
-            results within deadlines. Demonstrated leadership in technical projects and fostering collaborative environments. Seeking to
-            leverage expertise to contribute to innovative solutions and drive operational excellence in a professional setting.</p>
-        <hr/>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="./index.html">Daniel Islam</a>
+            <nav class="topnav" aria-label="Primary">
+                <span class="topnav__section"><a href="#summary">Summary</a></span>
+                <span class="topnav__section"><a href="#experience">Experience</a></span>
+                <span class="topnav__section"><a href="#projects">Projects</a></span>
+                <span class="topnav__section"><a href="#skills">Skills</a></span>
+                <a href="./projects.html">All Projects</a>
+                <a href="./contact.html">Contact</a>
+                <button type="button" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
 
-        <h2>Education</h2>
-        <p>B.S. Chemical Engineering, University of Kansas</p>
-        <hr/>
+    <main id="main" class="container">
+        <!-- Hero -->
+        <section class="hero reveal" aria-labelledby="hero-name">
+            <img class="hero__avatar" src="./assets/images/headshot1.jpg" alt="Portrait of Daniel Islam" width="132" height="132">
+            <div class="hero__body">
+                <h1 id="hero-name" class="hero__name">Daniel Islam</h1>
+                <p class="hero__tagline">Software Engineer &middot; MLOps &middot; Atlanta, GA &middot; U.S. Citizen</p>
+                <div class="links">
+                    <a class="link-pill" href="mailto:dislam7991@gmail.com">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        Email
+                    </a>
+                    <a class="link-pill" href="https://www.linkedin.com/in/daniel-islam1" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a class="link-pill" href="https://github.com/dislam7991" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <h2>Work Experience</h2>
-        <h3>DevOps Engineer &mdash; Applied Information, Inc. (11/2022 - 11/2023)</h3>
-        <ul>
-            <li><strong>Backend Development and API Integration:</strong> Developed and maintained a VPN management API using Python and FastAPI,
-                integrating with AWS, Docker, and custom Certificates API for seamless operations.</li>
-            <li><strong>Cloud Infrastructure Management:</strong> Optimized and managed AWS services (VPC, EC2, S3) with secure configurations, ensuring high availability and performance.</li>
-            <li><strong>Containerization and CI/CD:</strong> Created and orchestrated Docker containers, automated deployments with Watchtower,
-                and implemented CI/CD pipelines to streamline development workflows.</li>
-            <li><strong>Database Management:</strong> Handled PostgreSQL databases with expertise in writing optimized queries, backup/recovery
-                strategies, and data consistency.</li>
-            <li><strong>Scripting and Automation:</strong> Automated network and server management tasks with Python and Bash scripting to
-                improve efficiency and reduce manual interventions.</li>
-            <li><strong>Troubleshooting and System Optimization:</strong> Diagnosed and resolved complex issues in API endpoints, server
-                configurations, and containerized applications, enhancing system reliability.</li>
-            <li><strong>Frontend-Backend Integration:</strong> Integrated backend services with frontend applications, enabling seamless
-                data flow and user experience.</li>
-            <li><strong>Security and Compliance:</strong> Implemented robust security measures, managed access controls, and maintained
-                compliance with data security standards.</li>
-            <li><strong>Networking and VPN Configuration:</strong> Configured VPN servers, managed network routing, and facilitated
-                secure client-server communications.</li>
-            <li><strong>Project and Client Management:</strong> Led technical projects with cross-functional teams, delivered within deadlines,
-                and provided tailored technical support to clients through effective communication and solutions.</li>
-            <li><strong>Technical Documentation:</strong> Authored clear technical documentation and API specifications to enhance collaboration
-                and implementation by development teams.</li>
-        </ul>
+        <!-- Summary -->
+        <section id="summary" class="section reveal" aria-labelledby="summary-h">
+            <div class="section__title"><h2 id="summary-h">Summary</h2></div>
+            <div class="card">
+                <p>Software engineer with four years of production experience in Python, cloud infrastructure,
+                    frontend web development, and applied machine learning. Self-taught programmer who moved from
+                    chemical engineering into software, and now designs and teaches an end-to-end MLOps specialization
+                    program to domestic and international engineering cohorts. Applying to OMSCS to build formal depth
+                    in machine learning, algorithms, and computing systems.</p>
+            </div>
+        </section>
 
-        <h3>Production Support Engineer &mdash; Applied Information, Inc. (10/2022 - 11/2022)</h3>
-        <ul>
-            <li>Provided technical support to clients for network configurations, device performance, and server deployments.</li>
-            <li>Monitored system performance, identified bottlenecks, and optimized configurations for improved efficiency.</li>
-            <li>Collaborated with development teams to troubleshoot and resolve production issues in a timely manner.</li>
-            <li>Assisted in the deployment of software updates, patches, and security fixes to maintain system integrity.</li>
-            <li>Assembled, tested, loaded custom software and firmware onto, and shipped IoT devices.</li>
-        </ul>
+        <!-- Experience -->
+        <section id="experience" class="section reveal" aria-labelledby="experience-h">
+            <div class="section__title"><h2 id="experience-h">Experience</h2></div>
+            <ol class="timeline">
+                <li class="timeline__item">
+                    <h3 class="timeline__role">MLOps Faculty Instructor &amp; Curriculum Designer <span class="tags">(Contract)</span></h3>
+                    <p class="timeline__meta">InnovatiCS &middot; Remote &middot; Apr 2025 &ndash; Present</p>
+                    <ul>
+                        <li>Sole designer and instructor of an end-to-end MLOps specialization program, currently delivering to
+                            domestic cohorts and planned to deliver to an international March 2027 cohort at the Energy and Water
+                            Academy in Saudi Arabia.</li>
+                        <li>Built the full curriculum across the model lifecycle: ETL in Python, data versioning with DVC,
+                            feature storage with Feast, training with scikit-learn and XGBoost, experiment tracking with MLflow,
+                            bias evaluation with Fairlearn, serving with FastAPI and Docker on AWS EC2, and monitoring of data
+                            drift and concept drift with Grafana and Evidently AI.</li>
+                        <li>Taught vendor-agnostic principles then applied them in practice using industry-standard tools, from
+                            open-source orchestration tools like Prefect and Airflow to enterprise solutions such as Databricks.</li>
+                        <li>Designed a production CI/CD/CT pipeline: lint, unit and integration testing, image build, vulnerability
+                            scanning, staging smoke tests, approval-gated promotion, and automatic rollback. Implemented
+                            observability, monitoring, and governance principles for ML models in production.</li>
+                        <li>Created pre-recordings, lecture slides, assignments, projects, code samples, and student resource
+                            content to drive interaction and engagement in addition to live lectures.</li>
+                    </ul>
+                </li>
+                <li class="timeline__item">
+                    <h3 class="timeline__role">Software Engineer <span class="tags">(Contract)</span></h3>
+                    <p class="timeline__meta">Urban X Styles &middot; Atlanta, GA &middot; Dec 2023 &ndash; Dec 2025</p>
+                    <ul>
+                        <li>Founding engineer for an apparel e-commerce brand carrying 60&ndash;80 products and shipping to the US
+                            and Canada; owned the live Shopify storefront end to end, including catalog, theme, and fulfillment
+                            integrations.</li>
+                        <li>Led a full Shopify-to-custom-platform migration onto self-owned infrastructure, sequenced into six
+                            reversible phases so rollback stayed available until final cutover; cut platform fees and removed
+                            vendor limits on data access and checkout.</li>
+                        <li>Architected the platform on a single TypeScript backend using Next.js App Router to keep one deployment
+                            path; designed the PostgreSQL data model on Neon with Drizzle ORM covering products, variants,
+                            customers, and orders, and wrote Node.js export and migration scripts to move records off Shopify.</li>
+                        <li>Stood up CI/CD with GitHub Actions and Docker, deployed on Vercel with Cloudflare DNS as the rollback
+                            switch and Sentry for error monitoring, and served product media from AWS S3 and CloudFront.</li>
+                    </ul>
+                </li>
+                <li class="timeline__item">
+                    <h3 class="timeline__role">R&amp;D Product Development Specialist</h3>
+                    <p class="timeline__meta">Dynamic Technical Formulations (DTF) &middot; Alpharetta, GA &middot; Apr 2024 &ndash; Present</p>
+                    <ul>
+                        <li>Replaced the company's disconnected spreadsheet workflow with a central database in Python, SQLite, and
+                            Streamlit, synced to Google Sheets; it holds all lab and warehouse inventory and generates quote sheets,
+                            formula sheets, and sample records from one source of truth, with Google Apps Script logging lab tasks
+                            to inventory automatically. Saves 10+ hours per week.</li>
+                        <li>Designed the schema to store only raw facts and compute every derived value through SQL views instead of
+                            stored summary tables, eliminating the sync drift that made the spreadsheet system unreliable.</li>
+                        <li>Authored the department's first 4 controlled SOPs, replacing an undocumented ad-hoc process, approved,
+                            versioned, and followed by 3 staff across a lab running 110+ samples per month.</li>
+                        <li>Converted subjective taste evaluation into scored data by defining a fixed sensory lexicon, scored
+                            attributes, and explicit advancement criteria, so an advance-or-reject decision is a recorded number
+                            instead of an opinion.</li>
+                        <li>Rebuilt R&amp;D on recorded data: every sample and raw material carries a standard record, so past
+                            formulas are searchable, cost per formula is computed, and cycle time and approval rate per customer
+                            drive account tiering and work prioritization.</li>
+                    </ul>
+                </li>
+                <li class="timeline__item">
+                    <h3 class="timeline__role">DevOps Software Engineer</h3>
+                    <p class="timeline__meta">Applied Information, Inc. &middot; Alpharetta, GA &middot; Oct 2022 &ndash; Dec 2023</p>
+                    <ul>
+                        <li>Built a self-service VPN provisioning API: a Python and FastAPI REST API that automated end-to-end
+                            provisioning of OpenVPN servers and field devices, forming the foundation of a new self-service SaaS
+                            offering.</li>
+                        <li>Cut new VPN server setup from 20 hours of manual work per week to a single API call by automating
+                            certificate issuance, OpenVPN configuration, systemd service control, Cloudflare DNS, and AWS security
+                            group rules.</li>
+                        <li>Built reverse-proxy provisioning and load balancing with NGINX and automatic DNS records, giving
+                            customers authenticated remote access to device web interfaces.</li>
+                        <li>Developed audit tooling for ping, HTTP, and RTSP camera-stream health checks using FFmpeg, verifying
+                            connectivity across 1,500 cities and 50,000 devices.</li>
+                        <li>Architected scalable cloud infrastructure: managed AWS environments, containerized microservices with
+                            Docker, and ran CI/CD through GitHub Actions and Watchtower, supporting hundreds of simultaneous client
+                            requests at 99.9% uptime.</li>
+                        <li>Prevented downtime and saved thousands of dollars and hundreds of man-hours annually by automating SSL
+                            certificate audits and renewal reporting with Python, asyncio, nmap, and the Cloudflare API.</li>
+                        <li>Secured the API with Postgres-backed API-key authentication and request logging; containerized with
+                            Docker and deployed to production servers on AWS EC2 instances.</li>
+                    </ul>
+                </li>
+                <li class="timeline__item">
+                    <h3 class="timeline__role">IT Specialist &rarr; Software Developer</h3>
+                    <p class="timeline__meta">The LFS Group &middot; Alpharetta, GA &middot; Mar 2022 &ndash; Oct 2022</p>
+                    <ul>
+                        <li>Owned day-to-day IT for a staffing and recruiting firm supporting 30+ employees: Microsoft 365, Windows
+                            endpoints, identity and access, networking, and technical support. Promoted into a developer role after
+                            automating work the team was doing by hand.</li>
+                        <li>Built Python and SQL pipelines and API and webhook integrations across Freshteam, Indeed, ADP,
+                            QuickBooks, Zoom, and Microsoft 365, ending duplicate data entry and keeping candidate, recruiter, and
+                            payroll records synchronized; supported the QuickBooks migration.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
 
-        <h3>Talent Acquisition Specialist &mdash; LFS Group (03/2022 - 10/2022)</h3>
-        <!--
-            NOTE: The bullets below were copied from the Production Support Engineer role
-            and describe technical support / IoT work, which does not match a recruiting role.
-            Please replace them with your real Talent Acquisition responsibilities
-            (for example: sourcing candidates, screening, interview coordination, offer management).
-        -->
-        <ul>
-            <li>Provided technical support to clients for network configurations, device performance, and server deployments.</li>
-            <li>Monitored system performance, identified bottlenecks, and optimized configurations for improved efficiency.</li>
-            <li>Collaborated with development teams to troubleshoot and resolve production issues in a timely manner.</li>
-            <li>Assisted in the deployment of software updates, patches, and security fixes to maintain system integrity.</li>
-            <li>Assembled, tested, loaded custom software and firmware onto, and shipped IoT devices.</li>
-        </ul>
-        <hr/>
+        <!-- Projects -->
+        <section id="projects" class="section reveal" aria-labelledby="projects-h">
+            <div class="section__title"><h2 id="projects-h">Featured Projects</h2></div>
+            <div class="grid">
+                <article class="subcard">
+                    <h3>Aesthetica Fitness Coaching Website</h3>
+                    <p class="subcard__meta">Live business &middot; 2025 &ndash; Present</p>
+                    <p>Full-stack coaching web app with Stripe payments, Calendly scheduling, and serverless lead capture;
+                        typed reusable component system on React and the Next.js App Router with SSR and SEO.</p>
+                    <p class="tags">Next.js &middot; TypeScript &middot; Tailwind &middot; Stripe &middot; Framer Motion</p>
+                    <div class="card-links">
+                        <a class="card-link card-link--primary" href="https://aesthetica-site.vercel.app" target="_blank" rel="noopener">Live site &#8599;</a>
+                        <a class="card-link" href="https://github.com/dislam7991/Aesthetica-site" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                            Code
+                        </a>
+                    </div>
+                </article>
+                <article class="subcard">
+                    <h3>ML Customer Churn Prediction</h3>
+                    <p class="subcard__meta">Energy sector &middot; 2025</p>
+                    <p>Nine-model comparison and an end-to-end ETL pipeline across 16,096 samples and 456 features;
+                        identified likely churners at 50% precision and 80% recall, modeling roughly $1.3M in annual savings.</p>
+                    <p class="tags">Python &middot; scikit-learn &middot; XGBoost &middot; SMOTE &middot; Tableau</p>
+                    <div class="card-links">
+                        <a class="card-link" href="https://github.com/dislam7991/ModelingChurn" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                            Code
+                        </a>
+                    </div>
+                </article>
+                <article class="subcard">
+                    <h3>DTF Marketing Website</h3>
+                    <p class="subcard__meta">Dynamic Technical Formulations &middot; 2025</p>
+                    <p>Responsive five-page marketing site built from scratch: shared nav/footer injection, Netlify Forms,
+                        IntersectionObserver scroll animations, and per-page SEO and Open Graph tags.</p>
+                    <p class="tags">HTML5 &middot; CSS3 &middot; Vanilla JS &middot; Netlify</p>
+                    <div class="card-links">
+                        <a class="card-link card-link--primary" href="https://dtf-website.netlify.app" target="_blank" rel="noopener">Live site &#8599;</a>
+                        <a class="card-link" href="https://github.com/dislam7991/dtf-website" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                            Code
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <p style="margin-top:1rem"><a href="./projects.html">View all projects &rarr;</a></p>
+        </section>
 
-        <h2>Skills</h2>
-        <h3>Technical Skills</h3>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, JavaScript, HTML, CSS, SQL, Java</li>
-            <li><strong>Web Development:</strong> React, Node.js, FastAPI</li>
-            <li><strong>API Development &amp; Testing:</strong> Extensive experience with Postman for API testing, endpoint validation, and performance checks.</li>
-            <li><strong>Cloud &amp; DevOps:</strong> AWS (VPC, EC2, S3, Lambda), Docker, CI/CD (Git, GitHub Actions, Watchtower), Azure (knowledge)</li>
-            <li><strong>Database Management:</strong> PostgreSQL (CRUD operations, query optimization, backup and recovery)</li>
-            <li><strong>Containerization &amp; Orchestration:</strong> Docker (container creation and management)</li>
-            <li><strong>Networking &amp; Security:</strong> VPN configuration, IP routing, network configurations, compliance with data security standards</li>
-            <li><strong>Automation &amp; Scripting:</strong> Python scripting, Bash scripting</li>
-            <li><strong>Infrastructure Management:</strong> Cloud server configuration and management, cloud security measures</li>
-            <li><strong>Tools &amp; Software:</strong> Visual Studio Code, PyCharm, Nginx, osTicket, MS Office, LabVIEW Controller Design, Aspen HYSYS, COMSOL Multiphysics</li>
-            <li><strong>Technical Documentation:</strong> API documentation and specifications, clear and collaborative documentation practices.</li>
-        </ul>
+        <!-- Education -->
+        <section id="education" class="section reveal" aria-labelledby="education-h">
+            <div class="section__title"><h2 id="education-h">Education &amp; Training</h2></div>
+            <div class="grid">
+                <article class="subcard">
+                    <h3>University of Kansas</h3>
+                    <p class="subcard__meta">B.S. Chemical Engineering &middot; May 2019 &middot; Lawrence, KS</p>
+                    <p>Undergraduate Research Assistant: studied how mechanical stress at the air-solution interface
+                        drives monoclonal antibody aggregation, using a Langmuir trough; analyzed data and reported
+                        findings to faculty.</p>
+                </article>
+                <article class="subcard">
+                    <h3>Data Science, ML &amp; AI Bootcamp (40 Weeks)</h3>
+                    <p class="subcard__meta">InnovatiCS &middot; Completed Jan 2026</p>
+                    <p>Python, SQL, scikit-learn, supervised and unsupervised learning, deep learning, generative AI,
+                        LLMs, Tableau, and MLOps, with a capstone project and certification.</p>
+                </article>
+                <article class="subcard">
+                    <h3>Machine Learning in Production</h3>
+                    <p class="subcard__meta">DeepLearning.AI / Coursera &middot; Aug 2025</p>
+                    <p>Andrew Ng's course on the production ML lifecycle: data and model versioning, CI/CD for ML,
+                        concept and data drift detection, and deployment patterns.</p>
+                    <div class="card-links">
+                        <a class="card-link" href="https://coursera.org/verify/2O4XGM6DAIDQ" target="_blank" rel="noopener">Verify certificate &#8599;</a>
+                    </div>
+                </article>
+                <article class="subcard">
+                    <h3>NGINX Core Training</h3>
+                    <p class="subcard__meta">F5 Networks &middot; Aug 2023</p>
+                    <p>Core NGINX configuration, reverse proxying, and load balancing.</p>
+                </article>
+            </div>
+        </section>
 
-        <h3>Soft Skills</h3>
-        <ul>
-            <li><strong>Project Management:</strong> Leading and managing technical projects, meeting deadlines.</li>
-            <li><strong>Interpersonal Skills:</strong> Effective communication (verbal and written), teamwork across departments.</li>
-            <li><strong>Client Management:</strong> Understanding requirements, providing solutions, and client support.</li>
-            <li><strong>Organization &amp; Attention to Detail:</strong> Managing complex projects and systems, documentation accuracy.</li>
-            <li><strong>Leadership:</strong> Leading teams and managing employees.</li>
-            <li><strong>Problem Solving:</strong> Troubleshooting complex systems, optimizing performance.</li>
-            <li><strong>Trustworthiness:</strong> Handling sensitive data and high-security server access with professionalism.</li>
-            <li><strong>Dependability &amp; Punctuality:</strong> Reliable and consistent in delivering tasks.</li>
-        </ul>
-        <hr/>
-
-        <nav class="nav-links" aria-label="Secondary pages">
-            <a href="./hobbies.html">Hobbies</a>
-            <a href="./contact.html">Contact Me</a>
-        </nav>
-
-        <footer>
-            <p><small>&copy; Daniel Islam 2024</small></p>
-        </footer>
+        <!-- Skills -->
+        <section id="skills" class="section reveal" aria-labelledby="skills-h">
+            <div class="section__title"><h2 id="skills-h">Technical Skills</h2></div>
+            <div class="card">
+                <div class="skill-group">
+                    <span class="skill-group__label">Languages</span>
+                    <ul class="chips"><li class="chip">Python</li><li class="chip">JavaScript</li><li class="chip">TypeScript</li><li class="chip">SQL</li><li class="chip">HTML/CSS</li><li class="chip">Bash</li></ul>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-group__label">Backend &amp; APIs</span>
+                    <ul class="chips"><li class="chip">FastAPI</li><li class="chip">Node.js</li><li class="chip">Next.js API routes</li><li class="chip">RESTful APIs</li><li class="chip">NGINX</li><li class="chip">Postman</li></ul>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-group__label">Frontend</span>
+                    <ul class="chips"><li class="chip">React 19</li><li class="chip">Next.js (App Router, SSR)</li><li class="chip">Tailwind CSS</li></ul>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-group__label">Cloud &amp; DevOps</span>
+                    <ul class="chips"><li class="chip">AWS (EC2, S3, VPC, CloudFront)</li><li class="chip">Docker</li><li class="chip">GitHub Actions</li><li class="chip">CI/CD/CT</li><li class="chip">Watchtower</li><li class="chip">Vercel</li><li class="chip">Netlify</li><li class="chip">Cloudflare</li><li class="chip">Linux</li><li class="chip">systemd</li><li class="chip">Kubernetes</li></ul>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-group__label">Databases</span>
+                    <ul class="chips"><li class="chip">PostgreSQL</li><li class="chip">Neon</li><li class="chip">Drizzle ORM</li><li class="chip">SQLite</li><li class="chip">Redis</li></ul>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-group__label">Data Science &amp; ML</span>
+                    <ul class="chips"><li class="chip">pandas</li><li class="chip">NumPy</li><li class="chip">scikit-learn</li><li class="chip">XGBoost</li><li class="chip">LightGBM</li><li class="chip">SMOTE</li><li class="chip">Fairlearn</li><li class="chip">Matplotlib</li><li class="chip">Seaborn</li><li class="chip">Tableau</li></ul>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-group__label">MLOps</span>
+                    <ul class="chips"><li class="chip">MLflow</li><li class="chip">DVC</li><li class="chip">Feast</li><li class="chip">Prefect</li><li class="chip">Airflow</li><li class="chip">Evidently AI</li><li class="chip">Prometheus</li><li class="chip">Grafana</li></ul>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-group__label">Tools</span>
+                    <ul class="chips"><li class="chip">Git</li><li class="chip">Sentry</li><li class="chip">Jupyter</li><li class="chip">VS Code</li><li class="chip">Streamlit</li><li class="chip">OpenVPN</li><li class="chip">FFmpeg</li></ul>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <nav class="links" aria-label="Site" style="justify-content:center;margin-bottom:0.75rem">
+            <a class="link-pill" href="./projects.html">Projects</a>
+            <a class="link-pill" href="./hobbies.html">Hobbies</a>
+            <a class="link-pill" href="./contact.html">Contact</a>
+        </nav>
+        <p>&copy; <span id="year">2026</span> Daniel Islam</p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
