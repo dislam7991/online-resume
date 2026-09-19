@@ -1,41 +1,42 @@
-# WebDev
+# Online Resume — Daniel Islam
 
-Repository to hold all of my web development files, projects, and notes while learning.
+A simple, static, multi-page online resume built with plain HTML and CSS.
 
-## Purpose and Goals
+## Pages
 
-This repository is dedicated to my journey of learning web development and frontend development. It contains various projects and exercises that I have completed to improve my skills in HTML, CSS, JavaScript, and other web technologies. The goal is to document my progress and create a portfolio of my work.
+- `index.html` — Main resume: summary, education, work experience, and skills.
+- `hobbies.html` — Personal hobbies and interests.
+- `contact.html` — Contact information.
 
-## Table of Contents
+## Structure
 
-- [Purpose and Goals](#purpose-and-goals)
-- [Projects](#projects)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Projects
-
-A list of projects included in this repository:
-
-1. Project 1: Description of project 1.
-2. Project 2: Description of project 2.
-3. Project 3: Description of project 3.
-n. Project n: Description of project n.
-
-## Installation
-
-Instructions on how to set up the project locally.
+```
+.
+├── index.html
+├── hobbies.html
+├── contact.html
+├── assets
+│   ├── css
+│   │   └── style.css      # Shared stylesheet for all pages
+│   └── images            # Headshot and hobby photos
+└── README.md
+```
 
 ## Usage
 
-Examples and instructions on how to use the projects.
+The site is fully static. To view it locally, open `index.html` in any web
+browser. No build step or dependencies are required.
 
-## Contributing
+To serve it over HTTP (optional), you can run a simple local server:
 
-Guidelines for contributing to this repository.
+```bash
+python3 -m http.server 8000
+```
 
-## License
+Then open <http://localhost:8000> in your browser.
 
-Information about the license for this repository.
+## Editing
+
+- All pages share `assets/css/style.css`. Update that file to change the look
+  of every page at once.
+- Update the content directly in the HTML files.
