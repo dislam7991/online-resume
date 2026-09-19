@@ -386,6 +386,40 @@ section { scroll-margin-top: 5rem; }
 /* Tag row for project tech */
 .tags { color: var(--text-muted); font-family: var(--font-mono); font-size: 0.82rem; }
 
+/* Card action links (Code / Live) */
+.card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+}
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--bg-elev);
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: transform var(--transition), border-color var(--transition), background var(--transition);
+}
+.card-link:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+    border-color: var(--accent);
+    background: var(--surface-2);
+}
+.card-link svg { width: 14px; height: 14px; }
+.card-link--primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-contrast);
+}
+.card-link--primary:hover { background: var(--accent); filter: brightness(1.05); }
+
 /* ---- Footer -------------------------------------------------------------- */
 .site-footer {
     border-top: 1px solid var(--border);
