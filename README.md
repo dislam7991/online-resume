@@ -3,7 +3,7 @@
 # Daniel Islam — Online Résumé
 
 **A fast, modern, accessible personal résumé site.**
-Built with plain HTML, CSS, and a small amount of vanilla JavaScript — no build step, no dependencies.
+Built with plain HTML, CSS, and a small amount of vanilla JavaScript. No build step, no dependencies.
 
 Software Engineer · MLOps · Atlanta, GA
 
